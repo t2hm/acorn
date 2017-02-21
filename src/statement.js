@@ -623,8 +623,8 @@ pp.parseExport = function(node, exports) {
 
 pp.checkExport = function(exports, name, pos) {
   if (!exports) return
-  if (Object.prototype.hasOwnProperty.call(exports, name))
-    this.raiseRecoverable(pos, "Duplicate export '" + name + "'")
+  //if (Object.prototype.hasOwnProperty.call(exports, name))
+    //this.raiseRecoverable(pos, "Duplicate export '" + name + "'")
   exports[name] = true
 }
 
